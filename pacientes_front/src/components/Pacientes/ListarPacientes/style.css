@@ -1,0 +1,22 @@
+.tableMap {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 100px);
+
+    >.table, >.map {
+        flex: 1;
+    }
+    >.map {
+        height: 100%;
+    }
+}
+/* Se a largura da tela for menor que 920, flex direction column */
+@media (max-width: 1350px) {
+    .tableMap {
+        flex-direction: column;
+        min-height: auto;
+    }
+}
